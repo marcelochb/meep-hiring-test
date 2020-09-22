@@ -31,7 +31,7 @@ item pode-se abrir os detalhes do mesmo.
 
 ## Mobile (React Native)
 
-### API Publica utilizada foi: [Star Wars!](http://swapi.dev/api/)
+### API Publica utilizada foi: [The Star Wars API!](http://swapi.dev/api/)
 
 ### Organização do projeto:
   #### O projeto foi iniciado com template typescript
