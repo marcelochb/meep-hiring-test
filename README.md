@@ -22,7 +22,7 @@ item pode-se abrir os detalhes do mesmo.
 
 # Solução
 
-## Design criado no Figm
+## Design criado no Figma
 
 [Design!](https://www.figma.com/file/pSN48uftjBfgDD3DXgCJyS/meep-starwars?node-id=0%3A1)
 
