@@ -24,6 +24,8 @@ item pode-se abrir os detalhes do mesmo.
 
 ## Design criado no Figm
 
+[Design!](https://www.figma.com/file/pSN48uftjBfgDD3DXgCJyS/meep-starwars?node-id=0%3A1)
+
 ![alt text](https://github.com/marcelochb/meep-hiring-test/blob/master/design/design.png)
 
 
