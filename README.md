@@ -1,40 +1,35 @@
 # React Native (iOS) - Hiring Test 
-# Teste para vaga na SoftDesign
+# Teste para vaga na Meep
 
 ## Funcionalidades:
-1) Lista de Personagens
--Listar personagens exibindo seus respectivos nomes e fotos.
-- A lista deve possuir paginação infinita.
-- Ao clicar em um personagem exibir uma tela com detalhes.
-
-2) Tela de Detalhes do Personagem
-- Exibir mais detalhes do personagem com as seguintes informações: Foto, nome, descrição.
-- Exibir uma lista de quadrinhos em que o personagem tenha participado.
-
-## Premissas:
-- Código em React Native - Usar repositório público (Bitbucket, Github).
-- Presença de testes unitários.
-- Critérios de Avaliação:
-- Conhecimento de React Native.
-- Uso da arquitetura.
-- Uso de testes unitários.
-- Cuidados com design (UI/UX).
+Criação de um app com React-Native(CLI)* e Typescript* baseado em Star Wars
+consumindo a API citada abaixo.
+BASE_API: http://swapi.dev/api/
+TELAS:
+1. SPLASH:
+a. Deve conter uma arte que o tema seja Star Wars (livre)
+2. FILMS:
+a. Listagem do endpoint films (consulte a api para detalhes).
+b. Em cada item deve-se conter as informações básicas do filme (mín 4)
+c. Ao clicar em um filme, deve-se abrir os detalhes do mesmo, mostrando
+também os personagens, planetas, naves, veículos e espécies e de cada
+item pode-se abrir os detalhes do mesmo.
 
 ## Duração
 
-2 dias corridos para resolução
+24h
 
 
 # Solução
 
-## Design criado no XD
+## Design criado no Figm
 
 ![alt text](https://github.com/marcelochb/softDesign-hiring-test/blob/master/design/design.png)
 
 
 ## Mobile (React Native)
 
-### API Publica utilizada foi: [Marvel Developer!](https://developer.marvel.com/)
+### API Publica utilizada foi: [Star Wars!](http://swapi.dev/api/)
 
 ### Organização do projeto:
   #### O projeto foi iniciado com template typescript
