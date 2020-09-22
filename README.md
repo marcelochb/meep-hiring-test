@@ -24,7 +24,7 @@ item pode-se abrir os detalhes do mesmo.
 
 ## Design criado no Figm
 
-![alt text](https://github.com/marcelochb/softDesign-hiring-test/blob/master/design/design.png)
+![alt text](https://github.com/marcelochb/meep-hiring-test/blob/master/design/design.png)
 
 
 ## Mobile (React Native)
