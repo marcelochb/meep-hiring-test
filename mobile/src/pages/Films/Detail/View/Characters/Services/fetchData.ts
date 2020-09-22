@@ -11,15 +11,12 @@ export const useCharactersFetchDataService = (charactersUrl: string[]) => {
     const loadData = async () => {
       try {
         const promisses = charactersUrl.map(async character => {
-          console.tron.log('url', character.slice(20));
           const response = await api.get<ModelOfTableCharacters>(
             character.slice(20),
           );
-          console.tron.log('responseCharacter', response);
           setCharacters(preData => preData.concat(response.data));
         });
-        const result = await Promise.all(promisses);
-        console.tron.log('resultPromisse', result);
+        await Promise.all(promisses);
         setLoading(false);
       } catch (error) {
         setLoading(false);

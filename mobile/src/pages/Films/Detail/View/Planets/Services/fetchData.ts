@@ -11,13 +11,10 @@ export const usePlanetsFetchDataService = (planetsUrl: string[]) => {
     const loadData = async () => {
       try {
         const promisses = planetsUrl.map(async planet => {
-          console.tron.log('url', planet.slice(20));
           const response = await api.get<ModelOfTablePlanets>(planet.slice(20));
-          console.tron.log('responseCharacter', response);
           setPlanets(preData => preData.concat(response.data));
         });
-        const result = await Promise.all(promisses);
-        console.tron.log('resultPromisse', result);
+        await Promise.all(promisses);
         setLoading(false);
       } catch (error) {
         setLoading(false);

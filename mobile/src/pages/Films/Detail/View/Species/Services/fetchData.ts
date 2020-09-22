@@ -11,13 +11,10 @@ export const useSpeciesFetchDataService = (speciesUrl: string[]) => {
     const loadData = async () => {
       try {
         const promisses = speciesUrl.map(async specie => {
-          console.tron.log('url', specie.slice(20));
           const response = await api.get<ModelOfTableSpecies>(specie.slice(20));
-          console.tron.log('responseCharacter', response);
           setSpecies(preData => preData.concat(response.data));
         });
-        const result = await Promise.all(promisses);
-        console.tron.log('resultPromisse', result);
+        await Promise.all(promisses);
         setLoading(false);
       } catch (error) {
         setLoading(false);

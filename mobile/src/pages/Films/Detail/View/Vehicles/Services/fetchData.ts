@@ -11,15 +11,12 @@ export const useVehiclesFetchDataService = (vehiclesUrl: string[]) => {
     const loadData = async () => {
       try {
         const promisses = vehiclesUrl.map(async vehicle => {
-          console.tron.log('url', vehicle.slice(20));
           const response = await api.get<ModelOfTableVehicles>(
             vehicle.slice(20),
           );
-          console.tron.log('responseCharacter', response);
           setVehicles(preData => preData.concat(response.data));
         });
-        const result = await Promise.all(promisses);
-        console.tron.log('resultPromisse', result);
+        await Promise.all(promisses);
         setLoading(false);
       } catch (error) {
         setLoading(false);
